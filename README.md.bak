@@ -1,23 +1,8 @@
 # file-renamer
 
-## for rename file batch
+for rename file batch
 
-build:
-```
-rust file-renamer.rs
-```
-
-move binary to use tools globally:
-```
-sudo mv file-renamer /ust/local/bin
-```
-
-make alias in bash/zsh/fish:
-```
-alias fr="file-renamer"
-```
-
-how use:
+use:
 ```
 file-renamer -p . -f cpp -t txt -y
 ```
@@ -31,8 +16,9 @@ flags:
 -h : help
 ```
 
-result without -y flags:
+result:
 ```
+# Without -y flags
 ❯ fr -p . -f txt -t cpp
 Scanning directory: .
 file found:
@@ -56,10 +42,8 @@ Renaming: ./main.txt -> ./main.cpp
 Renaming: ./first_stage_init.txt -> ./first_stage_init.cpp
 ---
 Done. Successfully renamed 7 files.
-```
 
-result with -y flags:
-```
+# With -y flags
 ❯ fr -p . -f cpp -t txt -y
 Scanning directory: .
 file found:
