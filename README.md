@@ -4,7 +4,7 @@
 
 build:
 ```
-rust file-renamer.rs
+rustc file-renamer.rs
 ```
 
 move binary to use tools globally:
