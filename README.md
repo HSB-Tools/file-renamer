@@ -4,12 +4,12 @@
 
 build:
 ```
-rustc file-renamer.rs
+/usr/bin/clang -Wall -Wextra -o file-renamer file-renamer.c
 ```
 
 move binary to use tools globally:
 ```
-sudo mv file-renamer /ust/local/bin
+sudo mv file-renamer /usr/local/bin
 ```
 
 make alias in bash/zsh/fish:
@@ -28,6 +28,7 @@ flags:
 -f : from type file (e.g cpp/cpp)
 -t : to type file (e.g txt/txt)
 -y : skip confirmation rename file type data
+-r : recursive scan subdirectories
 -h : help
 ```
 
